@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import get_object_or_404
 from .models import Product, Category, OrderedProduct
 # Create your views here.
 
@@ -15,15 +16,30 @@ def about(request):
     return render(request, 'about.html')
 
 
-def cart(request, id="1"):
-    product = Product.objects.get(id=id)
-    ordered_product = OrderedProduct.objects.filter(product__id=id)
-    context = {'ordered_products': ordered_product}
-    if id is True:
-        cart[id] = Product.objects.get(id=id)
-        request.session['cart'] = cart
-    cart = request.session.get('cart', {})
+def cart(request, id=1):
+    # product = Product.objects.get(id=id)
+    #
+    # cart = request.session.get('cart', {})
+    # if id == :
+    #     request.session[id] = quantity
+    # ordered_product = OrderedProduct.objects.create(product=product)
+    # context = {'carts': cart}
+    # return render(request, 'cart.html', context=context)
+    # cart = request.session.get('cart', {})
+    # cart[item_id] = quantity
+    # request.session['cart'] = cart
+    quantity = 1
+    my_buffer_cart = request.session.get('my_cart', {})
+    if id not in my_buffer_cart:
+        #request.session['my_cart'].items = (id:quantity)]
+        #request.session['my_cart'] = {id: quantity}
+        my_buffer_cart.update({id: quantity})
+    new = {}
+    for id, quantity in my_buffer_cart.items():
+        new[get_object_or_404(Product, id=id)] = quantity
+    context = {'news': new}
     return render(request, 'cart.html', context=context)
+
 
 
 def item(request, id):
