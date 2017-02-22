@@ -32,13 +32,13 @@
                             </ol>
                             <div class="carousel-inner">
 
-                                {% for product in products %}
+                                {% for slider in sliders %}
                                 <div class="item {% if forloop.first %} active {% endif %}">
-                                    <a href="{% url 'item' product.id %}">
-                                        <img class="slide-image" src="{{product.big_photo.url}}" alt="">
+                                    <a href="{% url 'item' slider.id %}">
+                                        <img class="slide-image" src="{{slider.big_photo.url}}" alt="">
                                         <div class="carousel-caption">
-                                            <h3>{{ product.name }}</h3>
-                                            <p>{{ product.description }}</p>
+                                            <h3>{{ slider.name }}</h3>
+
                                         </div>
                                     </a>
                                 </div>

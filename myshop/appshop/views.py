@@ -5,9 +5,11 @@ from .models import Product, Category, OrderedProduct
 
 
 def index(request):
-    product = Product.objects.filter(slider=True)
+    slider = Product.objects.filter(slider=True)
+    product = Product.objects.filter(in_stock=True)
     category = Category.objects.all()
     context = {'products': product,
+               'sliders': slider,
                'categories': category}
     return render(request, 'index.html', context=context)
 
