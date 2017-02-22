@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %} Shop Homepage - Start Bootstrap Template {% endblock %}
+
+{% block content %}
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Каталог</p>
+                <div class="list-group">
+                    {% for category in categories %}
+                    <a href="{% url 'catalogue' category.short_description %}"
+                       class="list-group-item">{{category.name}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+
+
+                <div class="row">
+                {% for product in products%}
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <a href="{% url 'item' product.id %}"><img src="{{product.small_photo.url}}" alt=""></a>
+                            <div class="caption">
+
+                                <h4><a href="{% url 'item' product.id%}">{{product.name}}</a>
+
+                                </h4>
+                                <h5 class="">{{product.price}} &#8381;</h5>
+                                <p>{{product.short_description}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}
