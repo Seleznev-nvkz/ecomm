@@ -13,8 +13,8 @@
                 <p class="lead">Каталог</p>
                 <div class="list-group">
                     {% for category in categories %}
-                    <a href="{% url 'catalogue' category.name %}"
-                       class="list-group-item">{{category.short_description}}</a>
+                    <a href="{% url 'catalogue' category.short_description %}"
+                       class="list-group-item">{{category.name}}</a>
                     {% endfor %}
                 </div>
             </div>

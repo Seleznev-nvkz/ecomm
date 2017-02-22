@@ -14,13 +14,13 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=200)
     short_description = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
+    description = models.CharField(max_length=1000)
     price = models.FloatField()
-    is_enabled = models.BooleanField()
+    slider = models.BooleanField()
     small_photo = models.ImageField()
     big_photo = models.ImageField()
-    is_featured = models.BooleanField()
-    is_really_hot = models.BooleanField()
+    in_stock = models.BooleanField()
+    on_main_page = models.BooleanField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __str__(self):

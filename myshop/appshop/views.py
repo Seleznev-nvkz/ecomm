@@ -5,7 +5,7 @@ from .models import Product, Category, OrderedProduct
 
 
 def index(request):
-    product = Product.objects.filter(is_enabled=True)
+    product = Product.objects.filter(slider=True)
     category = Category.objects.all()
     context = {'products': product,
                'categories': category}
@@ -51,7 +51,7 @@ def item(request, id):
 
 
 def catalogue(request, cat):
-    category = Category.objects.get(name=cat)
+    category = Category.objects.get(short_description=cat)
     product = Product.objects.filter(category=category)
     category = Category.objects.all()
     context = {'categories': category,
