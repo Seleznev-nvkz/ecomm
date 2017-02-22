@@ -31,15 +31,14 @@ def cart(request, id=1):
     quantity = 1
     my_buffer_cart = request.session.get('my_cart', {})
     if id not in my_buffer_cart:
-        #request.session['my_cart'].items = (id:quantity)]
-        #request.session['my_cart'] = {id: quantity}
+        # request.session['my_cart'].items = (id:quantity)]
+        # request.session['my_cart'] = {id: quantity}
         my_buffer_cart.update({id: quantity})
     new = {}
     for id, quantity in my_buffer_cart.items():
         new[get_object_or_404(Product, id=id)] = quantity
     context = {'news': new}
     return render(request, 'cart.html', context=context)
-
 
 
 def item(request, id):
