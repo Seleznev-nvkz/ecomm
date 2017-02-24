@@ -53,11 +53,12 @@ def item(request, id):
 
 
 def catalogue(request, cat):
-    category = Category.objects.get(short_description=cat)
-    product = Product.objects.filter(category=category)
+    title_category = Category.objects.get(short_description=cat)
+    product = Product.objects.filter(category=title_category)
     category = Category.objects.all()
     context = {'categories': category,
-               'products': product}
+               'products': product,
+               'title': title_category}
     return render(request, 'catalogue.html', context=context)
 
 

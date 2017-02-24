@@ -11,7 +11,11 @@ body {
     /*background-color: #597da3 !important;*/
 /*}*/
 .slide-image {
-    width: 100%;
+        max-width: 800px;
+    max-height: 300px;
+    float: none;
+        margin-right: auto;
+    margin-left: auto;
 }
 .carousel-holder {
     margin-bottom: 30px;
@@ -37,7 +41,7 @@ body {
 
 .thumbnail img {
     /*width: 100%;*/
-    float: left;
+    float: none;
 }
 
 .openbigimage{
@@ -45,6 +49,15 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    max-width: 70%;
+    min-width:50%
+
+}
+
+.smallphoto{
+    max-width: 320px;
+    max-height: 150px;
+
 }
 
 .ratings {
