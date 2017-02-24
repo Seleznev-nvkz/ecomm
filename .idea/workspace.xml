@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0a59fd-6b12-470e-a685-ac2f89e4c5fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/bef056b7-87c1-4802-b91b-f7bb78cbcf7b.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/bef056b7-87c1-4802-b91b-f7bb78cbcf7b/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/myshop.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/animals-q-c-800-300-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/animals-q-c-800-300-8_M87Sc05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/animals-q-c-800-300-8_nwqJjq9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/compress.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/compressor-q-c-320-150-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlebig-q-c-800-300-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlebig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlebig_AY7mYrQ.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlebig_PEG2Vxj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlelittle-q-c-320-150-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlelittle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlelittle_WIBuSne.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlelittle_qXJaZKX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/cotlelittle_xjOgJ9G.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/fashion-q-c-320-150-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/fashion-q-c-320-150-1_dcib8M2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/fashion-q-c-320-150-1_pRwFlFo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/fashion-q-c-320-150-1_xTqp0aq.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/fashion-q-c-800-300-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/food-q-c-320-150-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/kotel-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/nasos-q-c-320-150-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/nightlife-q-c-800-300-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myshopstatic/upload/sports-q-c-320-150-6.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/db.sqlite3" afterPath="$PROJECT_DIR$/myshop/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/models.py" afterPath="$PROJECT_DIR$/myshop/appshop/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/static/css/shop-homepage.css" afterPath="$PROJECT_DIR$/myshop/appshop/static/css/shop-homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/templates/base.html" afterPath="$PROJECT_DIR$/myshop/appshop/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/templates/catalogue.html" afterPath="$PROJECT_DIR$/myshop/appshop/templates/catalogue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/templates/index.html" afterPath="$PROJECT_DIR$/myshop/appshop/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/templates/item.html" afterPath="$PROJECT_DIR$/myshop/appshop/templates/item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/views.py" afterPath="$PROJECT_DIR$/myshop/appshop/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tz" afterPath="$PROJECT_DIR$/tz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/myshop/settings.py" afterPath="$PROJECT_DIR$/myshop/myshop/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myshop/myshop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="121" column="13" lean-forward="false" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+            <state relative-caret-position="831">
+              <caret line="127" column="47" lean-forward="false" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -152,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tz" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tz" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tz">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
@@ -170,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/myshop/myshop/settings.py" />
         <option value="$PROJECT_DIR$/myshop/appshop/models.py" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/base.html" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/item.html" />
@@ -179,6 +135,7 @@
         <option value="$PROJECT_DIR$/tz" />
         <option value="$PROJECT_DIR$/myshop/appshop/views.py" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/catalogue.html" />
+        <option value="$PROJECT_DIR$/myshop/myshop/settings.py" />
       </list>
     </option>
   </component>
@@ -410,14 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myshop/myshop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="121" column="13" lean-forward="false" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1480">
@@ -488,6 +437,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myshop/myshop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="127" column="47" lean-forward="false" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
           <folding />
         </state>
       </provider>
