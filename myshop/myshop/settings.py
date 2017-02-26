@@ -25,7 +25,7 @@ SECRET_KEY = '&4wvlgdfc8jdb-j1(a!k@y80)fyf82763+m!80&1ulu-z=kcp&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.proclimate.su', 'www.proclimate.su']
 
 
 # Application definition
@@ -119,9 +119,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+
+STATICFILES_DIRS = [ "/var/www/data/ecomm/repo/myshop/appshop/static", "/var/www/data/ecomm/repo/myshop/appshop/templates", ]
+
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = BASE_DIR + 'static/upload'
+MEDIA_ROOT = BASE_DIR + '/static/upload/'
 
 MEDIA_URL = '/static/upload/'
 
