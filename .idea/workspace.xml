@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0a59fd-6b12-470e-a685-ac2f89e4c5fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/templates/about.html" afterPath="$PROJECT_DIR$/myshop/appshop/templates/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/templates/base.html" afterPath="$PROJECT_DIR$/myshop/appshop/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/urls.py" afterPath="$PROJECT_DIR$/myshop/appshop/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myshop/appshop/views.py" afterPath="$PROJECT_DIR$/myshop/appshop/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myshop/appshop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="200">
+              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -55,12 +56,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
               <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <marker date="1488298131975" expanded="true" signature="176:787" ph="..." />
-                <marker date="1488298131975" expanded="true" signature="202:776" ph="..." />
-                <marker date="1488298131975" expanded="true" signature="345:761" ph="..." />
-                <marker date="1488298131975" expanded="true" signature="502:741" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delivering.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delivering.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/delivering.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -105,12 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalogue.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/catalogue.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myshop/appshop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="480">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,7 +143,6 @@
         <option value="$PROJECT_DIR$/myshop/appshop/static/css/shop-homepage.css" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/index.html" />
         <option value="$PROJECT_DIR$/tz" />
-        <option value="$PROJECT_DIR$/myshop/appshop/views.py" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/catalogue.html" />
         <option value="$PROJECT_DIR$/myshop/myshop/settings.py" />
         <option value="$PROJECT_DIR$/myshop/myshop/urls.py" />
@@ -153,6 +150,8 @@
         <option value="$PROJECT_DIR$/myshop/appshop/templates/base.html" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/contacts.html" />
         <option value="$PROJECT_DIR$/myshop/appshop/templates/delivering.html" />
+        <option value="$PROJECT_DIR$/myshop/appshop/urls.py" />
+        <option value="$PROJECT_DIR$/myshop/appshop/views.py" />
       </list>
     </option>
   </component>
@@ -703,16 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myshop/appshop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
@@ -753,29 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myshop/appshop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1488298131975" expanded="true" signature="176:787" ph="..." />
-            <marker date="1488298131975" expanded="true" signature="202:776" ph="..." />
-            <marker date="1488298131975" expanded="true" signature="345:761" ph="..." />
-            <marker date="1488298131975" expanded="true" signature="502:741" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -788,6 +754,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myshop/appshop/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -805,6 +779,26 @@
         <state relative-caret-position="220">
           <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myshop/appshop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myshop/appshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

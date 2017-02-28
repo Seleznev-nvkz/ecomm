@@ -18,6 +18,16 @@ def about(request):
     return render(request, 'about.html')
 
 
+def contacts(request):
+    return render(request, 'contacts.html')
+
+
+def delivery(request):
+    return render(request, 'delivering.html')
+
+
+
+
 def cart(request, id=1):
     # product = Product.objects.get(id=id)
     #
