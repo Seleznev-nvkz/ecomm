@@ -22,7 +22,7 @@ def contacts(request):
     return render(request, 'contacts.html')
 
 
-def delivery(request):
+def delivering(request):
     return render(request, 'delivering.html')
 
 
