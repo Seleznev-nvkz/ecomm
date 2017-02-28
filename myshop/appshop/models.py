@@ -17,7 +17,7 @@ class Product(models.Model):
     description = models.CharField(max_length=1000)
     price = models.FloatField()
     slider = models.BooleanField()
-    photo = models.ImageField(upload_to='/static/upload/')
+    photo = models.ImageField()
     in_stock = models.BooleanField()
     on_main_page = models.BooleanField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
