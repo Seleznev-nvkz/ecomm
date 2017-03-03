@@ -124,7 +124,7 @@ STATICFILES_DIRS = [ "/var/www/data/ecomm/repo/myshop/appshop/static", "/var/www
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = BASE_DIR + '/../../../media/upload/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "/../../../media/upload/")
 
 MEDIA_URL = '/../../../media/upload/'
 
