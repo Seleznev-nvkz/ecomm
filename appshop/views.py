@@ -18,6 +18,10 @@ def about(request):
     return render(request, 'about.html')
 
 
+def pay(request):
+    return render(request, 'pay.html')
+
+
 def contacts(request):
     return render(request, 'contacts.html')
 
