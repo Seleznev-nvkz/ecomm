@@ -27,13 +27,19 @@
                             </tr>
                         </thead>
                         <tbody>
-
+                        buff {{ my_buffer_cart }}
                             {% for new in news %}
+                            new {{ new }}<br>
+                                quantity {{ new.quantity.quantity }}
                             <tr>
                                 <td><a href="{% url 'item' new.id%}">{{new.name}}</a></td>
-                                <td><input class="form-control input-sm" type="number" name="item-{{new.id}}" value="1"></td>
+                                <form action="{% url 'itemtocart' new.id%}" method="post">
+                                    {% csrf_token %}
+                                <td>
+                                    <input class="form-control input-sm" type="number" value="{{new.quantity}}">{{new.quantity}}</td>
                                 <td><input class="btn btn-default btn-sm" type="submit" value="Сохранить"></td>
-                                <td>{{new.price}}</td>
+                                </form>
+                                <td>{{ new.price }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>

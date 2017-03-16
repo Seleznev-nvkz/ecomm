@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&4wvlgdfc8jdb-j1(a!k@y80)fyf82763+m!80&1ulu-z=kcp&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.proclimate.su', 'www.proclimate.su']
+#ALLOWED_HOSTS = ['.proclimate.su', 'www.proclimate.su']
 
 
 # Application definition
@@ -70,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myshop.wsgi.application'
 
-
+CART_SESSION_ID = 'cart'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 

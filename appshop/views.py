@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
+from django.conf import settings
 from .models import Product, Category, OrderedProduct
 # Create your views here.
 
@@ -11,7 +12,7 @@ def index(request):
     context = {'products': product,
                'sliders': slider,
                'categories': category}
-    return render(request, 'index.html', context=context)
+    return render(request, 'index.html', context = context)
 
 
 def about(request):
@@ -30,9 +31,7 @@ def delivering(request):
     return render(request, 'delivering.html')
 
 
-
-
-def cart(request, id=1):
+def add_cart(request, id, quantity=1):
     # product = Product.objects.get(id=id)
     #
     # cart = request.session.get('cart', {})
@@ -44,18 +43,51 @@ def cart(request, id=1):
     # cart = request.session.get('cart', {})
     # cart[item_id] = quantity
     # request.session['cart'] = cart
-    quantity = 1
-    my_buffer_cart = request.session.get('my_cart', {})
-    if id not in my_buffer_cart:
-        #request.session['my_cart'].items = (id:quantity)]
-        #request.session['my_cart'] = {id: quantity}
+
+
+    my_buffer_cart = request.session.get(settings.CART_SESSION_ID)
+    product = Product.objects.get(id=id)
+    if not my_buffer_cart:
+        my_buffer_cart = {}
+    if product.id not in my_buffer_cart:
+        print('product.id ', product.id)
+        my_buffer_cart.update({product.id: quantity})
+    if request.method == 'POST':
+        print('kek')
+        # item_for_post = 'item-'+id
+        # request.POST.get("title", "")
+        asd = request.POST.get(id, '')
+        print('POST -------------------------- ', asd)
+        quantity = request.POST.get('item-' + id)
         my_buffer_cart.update({id: quantity})
     new = {}
-    for id, quantity in my_buffer_cart.items():
-        new[get_object_or_404(Product, id=id)] = quantity
-    context = {'news': new}
+    try:
+        for id, quantity in my_buffer_cart.items():
+            print('buffercart', id, quantity)
+            product = get_object_or_404(Product, id=id)
+            new[product]['quantity'] = quantity
+            print(new[product])
+    except Exception as e:
+        print(e)
+    request.session[settings.CART_SESSION_ID] = my_buffer_cart
+    request.session.modified = True
+    context = {'news': new, 'my_buffer_cart': my_buffer_cart}
     return render(request, 'cart.html', context=context)
 
+
+def show_cart(request):
+    #del request.session[settings.CART_SESSION_ID]
+    my_buffer_cart = request.session.get(settings.CART_SESSION_ID)
+    new = {}
+    if not my_buffer_cart:
+        my_buffer_cart = {}
+        # my_buffer_cart = request.session.get(settings.CART_SESSION_ID)
+    else:
+        product_ids = my_buffer_cart
+        new = Product.objects.filter(id__in=product_ids)
+    context = {'news': new}
+    print('context ', context)
+    return render(request, 'cart.html', context=context)
 
 
 def item(request, id):
